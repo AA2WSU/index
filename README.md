@@ -1,0 +1,1 @@
+Rayan Zaman is a student of B.S. in Electrical Engineering at the University of Illinois Urbana-Champaign (UIUC). His interests include digital design, machine learning, and embedded systems. He is passionate about innovation, problem-solving, and teamwork, with experience in STEM competitions, technical communication, and community service.
