@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abu's Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left panel (20%) */
+.sidebar {
+    width: 20%;
+    background: #f2f2f2;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Photo */
+.photo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*
+.photo img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+} */
+
+.photo img {
+    width: 180px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 0;
+}
+    
+/* Description */
+.description {
+    flex: 1;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.footer {
+    border-top: 1px solid #bbb;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+/* Right panel (80%) */
+.main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    background: #003c7d;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 18px 30px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background: #0055aa;
+}
+
+/* Main content */
+.content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.content h2 {
+    margin-bottom: 15px;
+}
+
+.content p {
+    line-height: 1.7;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+
+        <div class="photo">
+            <img src="docs/RMZ_Pic24.jpg" alt="Profile Photo">
+        </div>
+
+        <div class="description">
+            <h2>Rayan M. Zaman</h2>
+            <br>
+            <p>
+                B.S. Electrical Engineering<br>
+                University of Illinois Urbana-Champaign
+            </p>
+
+            <br>
+
+            <p>
+                Interested in embedded systems,
+                digital design, FPGA, VLSI,
+                machine learning, and robotics.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>2026 | rayanmzaman[@]gmail[.]com</p>
+            <br>
+        </div>
+
+    </div>
+
+    <!-- Right Panel -->
+    <div class="main">
+
+        <!-- Navigation -->
+        <div class="navbar">
+            <a href="projects.html"><span style="forn-weight: bold; color: gold;">Projects</span>span></a>
+            <a href="resume.html">Resume</a>
+            <a href="quicklinks.html">Quicklinks</a>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+
+            <h2>Welcome</h2>
+
+            <p>
+                Welcome to my personal website. This site contains
+                my engineering projects, resume, publications,
+                and useful links.
+            </p>
+
+            <br>
+
+            <p>
+                Use the navigation bar above to browse through
+                the different sections.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
