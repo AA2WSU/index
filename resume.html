@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Resume | Abu</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left 20% panel */
+.sidebar {
+    width: 20%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.photo img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.description {
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+/* Right 80% panel */
+.main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #003c7d;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+/* Resume area */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.resume-viewer {
+    width: 100%;
+    height: calc(100vh - 80px);
+    border: none;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Panel -->
+    <div class="sidebar">
+
+        <div class="photo">
+            <img src="images/profile.jpg" alt="Profile Photo">
+        </div>
+
+        <div class="description">
+            <h2>Abu</h2>
+            <p>
+                BSEE Student<br>
+                University of Illinois Urbana-Champaign
+            </p>
+
+            <br>
+
+            <p>
+                Electrical engineering,
+                embedded systems,
+                and digital design enthusiast.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- Right Panel -->
+    <div class="main">
+
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="quicklinks.html">Quick Links</a>
+        </div>
+
+
+        <div class="content">
+
+            <iframe
+                class="resume-viewer"
+                src="docs/Abu_CV26.pdf">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
