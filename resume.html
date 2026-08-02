@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Resume | Abu</title>
+<title>Rayan Zaman</title>
 
 <style>
 * {
@@ -19,31 +17,62 @@ body {
     height: 100vh;
 }
 
+/* Main container */
 .container {
     display: flex;
     height: 100vh;
 }
 
-/* Left 20% panel */
+/* Left panel (20%) */
 .sidebar {
     width: 20%;
-    background-color: #f2f2f2;
-    padding: 20px;
+    background: #f2f2f2;
     border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
+
+/* Photo */
+.photo {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/*
+.photo img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+} */
 
 .photo img {
-    width: 150px;
-    height: 200px;
+    width: 180px;
+    height: 240px;
     object-fit: cover;
+    border-radius: 0;
 }
-
+    
+/* Description */
 .description {
-    margin-top: 20px;
-    line-height: 1.5;
+    flex: 1;
+    margin-top: 15px;
+    line-height: 1.6;
 }
 
-/* Right 80% panel */
+.footer {
+    border-top: 1px solid #bbb;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+/* Right panel (80%) */
 .main {
     width: 80%;
     display: flex;
@@ -52,27 +81,34 @@ body {
 
 /* Navigation */
 .navbar {
-    background-color: #003c7d;
-    padding: 15px;
+    display: flex;
+    background: #003c7d;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
-    margin-right: 30px;
+    padding: 18px 30px;
     font-weight: bold;
 }
 
-/* Resume area */
-.content {
-    flex: 1;
-    padding: 20px;
+.navbar a:hover {
+    background: #0055aa;
 }
 
-.resume-viewer {
-    width: 100%;
-    height: calc(100vh - 80px);
-    border: none;
+/* Main content */
+.content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.content h2 {
+    margin-bottom: 15px;
+}
+
+.content p {
+    line-height: 1.7;
 }
 </style>
 
@@ -82,31 +118,38 @@ body {
 
 <div class="container">
 
-    <!-- Left Panel -->
+    <!-- Left Sidebar -->
     <div class="sidebar">
 
         <div class="photo">
-            <img src="images/profile.jpg" alt="Profile Photo">
+            <img src="docs/RMZ_Pic24.jpg" alt="Profile Photo">
         </div>
 
         <div class="description">
-            <h2>Abu</h2>
+            <h2>Rayan Zaman</h2>
+            <br>
             <p>
-                BSEE Student<br>
-                University of Illinois Urbana-Champaign
+                Student of <br>
+                B.S. in Electrical Engineering<br>
+                UIUC<br><br>
             </p>
 
             <br>
 
             <p>
-                Electrical engineering,
-                embedded systems,
-                and digital design enthusiast.
+                Rayan's interests include digital design, machine learning, and 
+                embedded systems. He is passionate about innovation, problem-solving, 
+                and teamwork, with experience in STEM competitions, technical 
+                communication, and community service.
             </p>
         </div>
 
-    </div>
+        <div class="footer">
+            <p>2026 | rayanmzaman[@]gmail[.]com</p>
+            <br>
+        </div>
 
+    </div>
 
     <!-- Right Panel -->
     <div class="main">
@@ -123,7 +166,7 @@ body {
 
             <iframe
                 class="resume-viewer"
-                src="docs/Abu_CV26.pdf">
+                src="docs/RMZ_CV26.pdf">
             </iframe>
 
         </div>
@@ -133,5 +176,4 @@ body {
 </div>
 
 </body>
-
 </html>
